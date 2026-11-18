@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-label="Animated molecular scene of protein synthesis inside a cell">
+<defs>
+  <radialGradient id="bg" cx="48%" cy="42%" r="75%">
+    <stop offset="0" stop-color="#18323a"/><stop offset=".62" stop-color="#0c1d27"/><stop offset="1" stop-color="#07131d"/>
+  </radialGradient>
+  <radialGradient id="cellFill" cx="42%" cy="35%" r="75%">
+    <stop offset="0" stop-color="#264b4a" stop-opacity=".7"/><stop offset=".58" stop-color="#18343c" stop-opacity=".58"/><stop offset="1" stop-color="#10252f" stop-opacity=".88"/>
+  </radialGradient>
+  <linearGradient id="membrane" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#9fe4d1"/><stop offset=".48" stop-color="#5db6a9"/><stop offset="1" stop-color="#397e83"/>
+  </linearGradient>
+  <linearGradient id="ribosomeTop" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#f4d99c"/><stop offset=".55" stop-color="#c69b61"/><stop offset="1" stop-color="#8c694d"/>
+  </linearGradient>
+  <linearGradient id="ribosomeBottom" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#e5bd80"/><stop offset=".6" stop-color="#a77d55"/><stop offset="1" stop-color="#72543f"/>
+  </linearGradient>
+  <linearGradient id="rna" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#f6a7c7"/><stop offset=".5" stop-color="#e879a9"/><stop offset="1" stop-color="#f4c0d5"/>
+  </linearGradient>
+  <linearGradient id="protein" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#b6e5ff"/><stop offset=".5" stop-color="#77c5e6"/><stop offset="1" stop-color="#6d9fd0"/>
+  </linearGradient>
+  <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="9" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+  <clipPath id="cellClip"><circle cx="700" cy="450" r="365"/></clipPath>
+  <style>
+    .ambient{opacity:.35}
+    .tiny{fill:#a4c8c2}
+    .rnaStroke{fill:none;stroke:url(#rna);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+    .rnaFine{fill:none;stroke:#ffd4e4;stroke-width:2.2;stroke-linecap:round;opacity:.8}
+    .aa{fill:#f3c77e;stroke:#ffe4ae;stroke-width:1.5}
+    .trna{fill:none;stroke:#b6d9a2;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+    .proteinBead{fill:url(#protein);stroke:#d2efff;stroke-width:1.5}
+    .organelle{fill:none;stroke:#6d9e91;stroke-width:2;opacity:.26}
+    .float{animation:float 7s ease-in-out infinite}
+    .float2{animation:float 9s ease-in-out infinite reverse}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .molecule{animation:travel 7s linear infinite}
+    @keyframes travel{0%{transform:translateX(0)}100%{transform:translateX(430px)}}
+    .t1{animation:trna1 3.5s ease-in-out infinite}
+    .t2{animation:trna2 3.5s ease-in-out infinite 1.15s}
+    .t3{animation:trna3 3.5s ease-in-out infinite 2.3s}
+    @keyframes trna1{0%,100%{transform:translate(0,0);opacity:.25}25%,65%{transform:translate(45px,95px);opacity:1}85%{transform:translate(0,0);opacity:.25}}
+    @keyframes trna2{0%,100%{transform:translate(0,0);opacity:.25}25%,65%{transform:translate(-6px,105px);opacity:1}85%{transform:translate(0,0);opacity:.25}}
+    @keyframes trna3{0%,100%{transform:translate(0,0);opacity:.25}25%,65%{transform:translate(-55px,92px);opacity:1}85%{transform:translate(0,0);opacity:.25}}
+    .chain{animation:emerge 7s ease-in-out infinite}
+    @keyframes emerge{0%,12%{opacity:.15;transform:translateY(18px) scale(.92)}45%,82%{opacity:1;transform:translateY(-5px) scale(1)}100%{opacity:.2;transform:translateY(18px) scale(.92)}}
+    .spark{animation:spark 2.4s ease-in-out infinite}
+    @keyframes spark{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+  </style>
+</defs>
+
+<rect width="1400" height="900" fill="url(#bg)"/>
+<circle cx="700" cy="450" r="390" fill="#000" opacity=".35" filter="url(#shadow)"/>
+<!-- cell boundary -->
+<circle cx="700" cy="450" r="370" fill="url(#cellFill)" stroke="#396c6b" stroke-width="22"/>
+<circle cx="700" cy="450" r="359" fill="none" stroke="url(#membrane)" stroke-width="3.5" opacity=".95"/>
+<circle cx="700" cy="450" r="379" fill="none" stroke="#a4e2ce" stroke-width="1" opacity=".24"/>
+<!-- membrane protein-like beads -->
+<g opacity=".62">
+  <g fill="#9bd9c7">
+    <circle cx="700" cy="78" r="5"/><circle cx="880" cy="125" r="5"/><circle cx="1024" cy="260" r="5"/>
+    <circle cx="1070" cy="450" r="5"/><circle cx="1017" cy="645" r="5"/><circle cx="880" cy="777" r="5"/>
+    <circle cx="700" cy="822" r="5"/><circle cx="520" cy="777" r="5"/><circle cx="383" cy="645" r="5"/>
+    <circle cx="330" cy="450" r="5"/><circle cx="376" cy="260" r="5"/><circle cx="520" cy="125" r="5"/>
+  </g>
+</g>
+
+<g clip-path="url(#cellClip)">
+  <!-- soft interior structures -->
+  <g class="ambient">
+    <path class="organelle" d="M410 275 C450 225 510 230 530 275 C550 320 500 350 455 330 C420 315 395 300 410 275Z"/>
+    <path class="organelle" d="M870 610 C910 570 980 590 982 640 C985 690 920 710 880 680 C850 658 846 634 870 610Z"/>
+    <path class="organelle" d="M480 650 C520 610 585 620 590 665 C596 708 535 730 495 700 C470 682 462 666 480 650Z"/>
+    <path class="organelle" d="M820 230 C860 195 920 215 925 255 C930 295 880 315 845 290 C820 272 804 250 820 230Z"/>
+    <path d="M420 280 Q455 245 490 280 T520 290 M875 635 Q910 600 945 635 T970 650 M490 675 Q525 640 560 675" fill="none" stroke="#8fc0a2" stroke-width="3" opacity=".35"/>
+  </g>
+  <!-- faint cytoskeletal tracks -->
+  <g stroke="#6b9b91" stroke-width="2" stroke-dasharray="4 12" opacity=".22" fill="none">
+    <path d="M360 520 Q530 430 700 450 T1030 370"/>
+    <path d="M410 700 Q590 610 760 670 T1010 710"/>
+    <path d="M420 210 Q590 300 770 235 T1010 250"/>
+  </g>
+
+  <!-- ribosome shadow and subunits -->
+  <ellipse cx="700" cy="520" rx="175" ry="52" fill="#061117" opacity=".5" filter="url(#shadow)"/>
+  <path d="M555 490 C555 430 610 385 680 382 C757 378 829 414 844 469 C853 501 825 529 784 536 L610 536 C575 530 553 516 555 490Z"
+        fill="url(#ribosomeTop)" stroke="#f4d6a2" stroke-width="2.2" filter="url(#softGlow)" opacity=".98"/>
+  <path d="M535 532 C545 490 598 475 648 482 C680 486 705 500 724 499 C751 498 772 480 804 484 C852 489 879 518 868 557 C856 603 800 630 701 630 C603 630 548 596 535 557Z"
+        fill="url(#ribosomeBottom)" stroke="#e9c38e" stroke-width="2.2"/>
+  <path d="M578 490 C610 455 653 447 700 451 C754 455 790 473 819 498" fill="none" stroke="#fff0c8" stroke-width="3" opacity=".35"/>
+  <path d="M572 548 C625 570 780 574 837 545" fill="none" stroke="#6e503d" stroke-width="4" opacity=".4"/>
+
+  <!-- mRNA strand travels through the ribosome -->
+  <g class="molecule">
+    <path d="M280 550 C350 532 420 565 490 548 S620 550 690 548 S820 550 900 545 S1010 535 1100 550" class="rnaStroke"/>
+    <path d="M280 550 C350 532 420 565 490 548 S620 550 690 548 S820 550 900 545 S1010 535 1100 550" class="rnaFine"/>
+    <!-- codon blocks -->
+    <g fill="#f5c5d8" stroke="#9b5579" stroke-width="1">
+      <rect x="365" y="533" width="16" height="16" rx="4"/><rect x="389" y="537" width="16" height="16" rx="4"/><rect x="413" y="539" width="16" height="16" rx="4"/>
+      <rect x="465" y="538" width="16" height="16" rx="4"/><rect x="489" y="540" width="16" height="16" rx="4"/><rect x="513" y="538" width="16" height="16" rx="4"/>
+      <rect x="565" y="540" width="16" height="16" rx="4"/><rect x="589" y="540" width="16" height="16" rx="4"/><rect x="613" y="540" width="16" height="16" rx="4"/>
+      <rect x="665" y="540" width="16" height="16" rx="4"/><rect x="689" y="540" width="16" height="16" rx="4"/><rect x="713" y="540" width="16" height="16" rx="4"/>
+    </g>
+  </g>
+
+  <!-- tRNA-like adaptors approaching and docking -->
+  <g class="t1" transform="translate(635 250)">
+    <path d="M0 0 C-12 22 -10 42 0 56 C12 70 12 90 0 108 M0 56 C-22 52 -32 66 -30 82 M0 56 C22 52 32 66 30 82" class="trna"/>
+    <path d="M-30 82 Q0 102 30 82" fill="none" stroke="#d6edc6" stroke-width="3"/>
+    <circle cx="0" cy="-5" r="12" class="aa"/>
+    <circle cx="-30" cy="82" r="4" fill="#d8efc6"/><circle cx="30" cy="82" r="4" fill="#d8efc6"/>
+  </g>
+  <g class="t2" transform="translate(760 235)">
+    <path d="M0 0 C-12 22 -10 42 0 56 C12 70 12 90 0 108 M0 56 C-22 52 -32 66 -30 82 M0 56 C22 52 32 66 30 82" class="trna"/>
+    <path d="M-30 82 Q0 102 30 82" fill="none" stroke="#d6edc6" stroke-width="3"/>
+    <circle cx="0" cy="-5" r="12" class="aa"/>
+    <circle cx="-30" cy="82" r="4" fill="#d8efc6"/><circle cx="30" cy="82" r="4" fill="#d8efc6"/>
+  </g>
+  <g class="t3" transform="translate(875 260)">
+    <path d="M0 0 C-12 22 -10 42 0 56 C12 70 12 90 0 108 M0 56 C-22 52 -32 66 -30 82 M0 56 C22 52 32 66 30 82" class="trna"/>
+    <path d="M-30 82 Q0 102 30 82" fill="none" stroke="#d6edc6" stroke-width="3"/>
+    <circle cx="0" cy="-5" r="12" class="aa"/>
+    <circle cx="-30" cy="82" r="4" fill="#d8efc6"/><circle cx="30" cy="82" r="4" fill="#d8efc6"/>
+  </g>
+
+  <!-- nascent polypeptide chain emerging from ribosome -->
+  <g class="chain" transform-origin="700px 390px">
+    <path d="M700 395 C678 370 720 350 700 325 C680 300 725 283 705 258 C690 240 710 224 731 210" fill="none" stroke="#6eb5d9" stroke-width="7" stroke-linecap="round" opacity=".45"/>
+    <g>
+      <circle cx="700" cy="395" r="12" class="proteinBead"/>
+      <circle cx="680" cy="370" r="11" class="proteinBead"/>
+      <circle cx="711" cy="346" r="12" class="proteinBead"/>
+      <circle cx="700" cy="322" r="10" class="proteinBead"/>
+      <circle cx="721" cy="298" r="12" class="proteinBead"/>
+      <circle cx="704" cy="274" r="10" class="proteinBead"/>
+      <circle cx="715" cy="250" r="12" class="proteinBead"/>
+      <circle cx="735" cy="225" r="11" class="proteinBead"/>
+    </g>
+    <path d="M737 214 C765 192 785 205 790 225 C795 246 778 259 759 252" fill="none" stroke="#79b9dc" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="790" cy="225" r="9" class="proteinBead"/>
+  </g>
+
+  <!-- released folded protein drifting away -->
+  <g class="float" transform="translate(910 350)">
+    <path d="M0 0 C-22 -20 -45 2 -31 22 C-18 42 8 34 11 57 C14 78 42 79 52 60 C64 38 42 20 24 24 C8 28 15 8 0 0Z"
+          fill="#5c9dc6" fill-opacity=".24" stroke="#8fd3f0" stroke-width="3"/>
+    <g fill="url(#protein)" stroke="#d2efff" stroke-width="1.5">
+      <circle cx="-18" cy="8" r="11"/><circle cx="4" cy="20" r="12"/><circle cx="24" cy="39" r="11"/><circle cx="8" cy="58" r="10"/><circle cx="-15" cy="43" r="10"/><circle cx="35" cy="12" r="9"/>
+    </g>
+  </g>
+
+  <!-- free amino acids moving toward the ribosome -->
+  <g class="float2">
+    <circle cx="505" cy="305" r="10" class="aa"/><circle cx="530" cy="325" r="7" class="aa"/>
+    <circle cx="970" cy="500" r="9" class="aa"/><circle cx="1000" cy="478" r="7" class="aa"/>
+    <circle cx="455" cy="620" r="8" class="aa"/><circle cx="475" cy="640" r="6" class="aa"/>
+  </g>
+  <!-- small motion sparks -->
+  <g class="spark" fill="#b9e9d5" filter="url(#softGlow)">
+    <circle cx="610" cy="370" r="3"/><circle cx="805" cy="370" r="3"/><circle cx="860" cy="320" r="2.5"/>
+  </g>
+</g>
+<!-- subtle outer ambient dots -->
+<g fill="#8cc8b5" opacity=".35">
+  <circle cx="190" cy="260" r="2"/><circle cx="1195" cy="330" r="3"/><circle cx="1110" cy="730" r="2"/>
+  <circle cx="260" cy="700" r="3"/><circle cx="700" cy="35" r="2"/><circle cx="700" cy="865" r="2"/>
+</g>
+</svg>

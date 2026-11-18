@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">Inside a Plant Cell — animated organelle tour</title>
+<desc id="desc">A premium dark scientific illustration of a plant cell. Seven animated highlights introduce the cell wall, plasma membrane, cytoplasm, nucleus, chloroplasts, mitochondrion, central vacuole, endoplasmic reticulum, Golgi apparatus and ribosomes.</desc>
+<defs>
+  <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#101b24"/><stop offset="1" stop-color="#091219"/></linearGradient>
+  <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#a4c98a"/><stop offset=".5" stop-color="#648d69"/><stop offset="1" stop-color="#345d50"/></linearGradient>
+  <linearGradient id="cyto" x2="1" y2="1"><stop stop-color="#d7e8a0" stop-opacity=".16"/><stop offset="1" stop-color="#6ebc91" stop-opacity=".07"/></linearGradient>
+  <linearGradient id="vacuole" x2="1" y2="1"><stop stop-color="#75c7d1" stop-opacity=".38"/><stop offset="1" stop-color="#4c8ea7" stop-opacity=".2"/></linearGradient>
+  <linearGradient id="chloro" x2="1" y2="1"><stop stop-color="#b9e47d"/><stop offset="1" stop-color="#4d985d"/></linearGradient>
+  <linearGradient id="gold" x2="1" y2="1"><stop stop-color="#f5d98a"/><stop offset="1" stop-color="#b98a42"/></linearGradient>
+  <radialGradient id="nucleus"><stop stop-color="#8f9cce"/><stop offset="1" stop-color="#46547f"/></radialGradient>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter>
+  <style>
+    text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    .muted{fill:#91a4ad}.white{fill:#edf4ed}.green{fill:#b9dc91}
+    .eyebrow{font-size:12px;letter-spacing:2.5px;font-weight:700;fill:#a9c88a}
+    .mainTitle{font-size:36px;font-weight:650;letter-spacing:-1px;fill:#f0f4ed}
+    .subTitle{font-size:15px;fill:#9aadb2}
+    .cell-label{font-size:13px;fill:#e7f0df;font-weight:600}
+    .small{font-size:11px;fill:#9db0b3}
+    .leader{stroke:#a9c9a0;stroke-width:1.3;fill:none;opacity:.72}
+    .organelle{stroke:#d6e9bd;stroke-opacity:.6;stroke-width:1.4}
+    .focus{fill:none;stroke:#e5f5a5;stroke-width:3;opacity:0;filter:url(#glow)}
+    .pulse{animation:pulse 14s ease-in-out infinite}
+    .f1{animation-delay:0s}.f2{animation-delay:2s}.f3{animation-delay:4s}.f4{animation-delay:6s}.f5{animation-delay:8s}.f6{animation-delay:10s}.f7{animation-delay:12s}
+    @keyframes pulse{0%,12%,100%{opacity:0;stroke-width:2}3%,8%{opacity:1;stroke-width:4}}
+    .stepDot{fill:#243a3c;stroke:#668c70;stroke-width:1.2}
+    .stepNum{font-size:12px;font-weight:700;fill:#d9e9c9;text-anchor:middle}
+    .stepTitle{font-size:15px;font-weight:650;fill:#eaf1e8}
+    .stepCopy{font-size:12px;fill:#9eafb0}
+    .stepLine{stroke:#31464a;stroke-width:1}
+    .card{fill:#13232b;stroke:#2a4147;stroke-width:1}
+    .activebar{fill:#a8ca83;opacity:.0;animation:bar 14s linear infinite}
+    .b1{animation-delay:0s}.b2{animation-delay:2s}.b3{animation-delay:4s}.b4{animation-delay:6s}.b5{animation-delay:8s}.b6{animation-delay:10s}.b7{animation-delay:12s}
+    @keyframes bar{0%,12%,100%{opacity:0}3%,8%{opacity:1}}
+    .chloroplast{fill:url(#chloro);stroke:#d2ed9b;stroke-width:1.4}
+  </style>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<circle cx="590" cy="475" r="410" fill="#284139" opacity=".12" filter="url(#shadow)"/>
+<!-- Header -->
+<text x="76" y="66" class="eyebrow">CELL BIOLOGY · INTERACTIVE VISUAL GUIDE</text>
+<text x="76" y="116" class="mainTitle">Inside a Plant Cell</text>
+<text x="78" y="148" class="subTitle">A guided look at the structures that keep a plant cell organised and functioning</text>
+<g transform="translate(1300 70)">
+ <rect width="220" height="36" rx="18" fill="#1b302d" stroke="#42634c"/>
+ <circle cx="18" cy="18" r="4" fill="#b9dc91"/>
+ <text x="32" y="22" font-size="11" fill="#c7d9bd" letter-spacing="1.2">ANIMATED ORGANELLE TOUR</text>
+</g>
+<line x1="76" y1="178" x2="1524" y2="178" stroke="#2b3d43"/>
+<!-- Main cell illustration -->
+<g id="plant-cell">
+  <rect x="92" y="230" width="920" height="650" rx="78" fill="#000" opacity=".28" filter="url(#shadow)"/>
+  <rect x="105" y="218" width="900" height="650" rx="78" fill="url(#wall)" stroke="#c2dda0" stroke-width="2"/>
+  <rect x="123" y="236" width="864" height="614" rx="65" fill="#203d35" stroke="#d6e7b2" stroke-width="2.2"/>
+  <rect x="133" y="246" width="844" height="594" rx="58" fill="url(#cyto)" stroke="#8eb98d" stroke-opacity=".7" stroke-width="1.5"/>
+  <!-- central vacuole -->
+  <path d="M390 365 C430 310 555 302 650 330 C770 365 850 420 855 535 C861 655 760 766 625 770 C505 775 390 710 355 610 C327 530 335 430 390 365Z" fill="url(#vacuole)" stroke="#91d2d1" stroke-opacity=".8" stroke-width="2"/>
+  <path d="M405 385 C460 340 560 337 646 360" fill="none" stroke="#c0e8dc" stroke-opacity=".35" stroke-width="2"/>
+  <text x="590" y="548" text-anchor="middle" font-size="17" font-weight="650" fill="#c8e6e2">CENTRAL VACUOLE</text>
+  <text x="590" y="571" text-anchor="middle" class="small">Water storage · turgor pressure</text>
+  <!-- nucleus -->
+  <ellipse cx="270" cy="510" rx="94" ry="82" fill="url(#nucleus)" stroke="#b5c1e6" stroke-width="2"/>
+  <ellipse cx="270" cy="510" rx="82" ry="70" fill="none" stroke="#d1d7f1" stroke-opacity=".45" stroke-width="2"/>
+  <circle cx="290" cy="506" r="25" fill="#303e68" stroke="#c5cbed" stroke-width="1.5"/>
+  <circle cx="290" cy="506" r="10" fill="#aeb9dc" opacity=".65"/>
+  <text x="270" y="620" text-anchor="middle" class="cell-label">NUCLEUS</text>
+  <!-- chloroplasts -->
+  <g transform="translate(760 300) rotate(-18)">
+    <ellipse class="chloroplast" cx="0" cy="0" rx="66" ry="30"/>
+    <path d="M-43 -12 Q-25 -23 -8 -12 T28 -12 M-45 0 Q-25 -11 -7 0 T30 0 M-42 12 Q-22 1 -4 12 T33 12" fill="none" stroke="#326e48" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(870 680) rotate(18)">
+    <ellipse class="chloroplast" cx="0" cy="0" rx="61" ry="27"/>
+    <path d="M-39 -10 Q-20 -20 -2 -10 T29 -10 M-40 0 Q-20 -10 -2 0 T29 0 M-38 10 Q-18 0 0 10 T30 10" fill="none" stroke="#326e48" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(245 735) rotate(-12)">
+    <ellipse class="chloroplast" cx="0" cy="0" rx="58" ry="25"/>
+    <path d="M-38 -9 Q-20 -19 -2 -9 T27 -9 M-38 0 Q-20 -10 -2 0 T27 0 M-36 9 Q-18 -1 0 9 T28 9" fill="none" stroke="#326e48" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- mitochondrion -->
+  <path d="M395 270 C430 245 492 254 507 285 C525 319 484 342 445 338 C404 335 372 301 395 270Z" fill="url(#gold)" stroke="#f1d99b" stroke-width="1.6"/>
+  <path d="M402 287 Q421 265 438 290 T473 291 T495 283 M400 306 Q422 284 440 310 T480 308" fill="none" stroke="#936b36" stroke-width="4" stroke-linecap="round"/>
+  <!-- ER around nucleus -->
+  <g fill="none" stroke="#d5b77b" stroke-width="5" stroke-linecap="round">
+    <path d="M180 410 C130 370 164 335 218 360 C260 379 300 365 320 390"/>
+    <path d="M170 430 C125 405 145 380 195 390 C240 400 290 382 330 410"/>
+    <path d="M175 455 C130 440 150 420 205 425 C250 430 300 410 340 430"/>
+    <path d="M190 570 C140 595 153 635 210 615 C260 598 315 620 333 595"/>
+  </g>
+  <g fill="#f2d79a">
+    <circle cx="179" cy="402" r="3"/><circle cx="205" cy="370" r="3"/><circle cx="244" cy="389" r="3"/><circle cx="293" cy="389" r="3"/><circle cx="167" cy="443" r="3"/><circle cx="215" cy="430" r="3"/><circle cx="310" cy="421" r="3"/><circle cx="195" cy="608" r="3"/><circle cx="253" cy="606" r="3"/><circle cx="307" cy="611" r="3"/>
+  </g>
+  <!-- Golgi -->
+  <g fill="none" stroke="#e2a875" stroke-width="7" stroke-linecap="round">
+    <path d="M690 735 Q755 705 820 735"/>
+    <path d="M700 750 Q760 725 830 750"/>
+    <path d="M710 765 Q765 745 820 765"/>
+    <path d="M722 780 Q770 766 810 780"/>
+  </g>
+  <g fill="#e9b98d"><circle cx="838" cy="739" r="8"/><circle cx="844" cy="760" r="6"/><circle cx="700" cy="720" r="6"/></g>
+  <!-- ribosomes -->
+  <g fill="#e8e3c4">
+    <circle cx="360" cy="390" r="4"/><circle cx="374" cy="405" r="3"/><circle cx="345" cy="430" r="3"/><circle cx="520" cy="275" r="3"/><circle cx="545" cy="290" r="4"/><circle cx="920" cy="420" r="4"/><circle cx="900" cy="445" r="3"/><circle cx="350" cy="680" r="4"/><circle cx="375" cy="700" r="3"/><circle cx="520" cy="800" r="4"/><circle cx="555" cy="790" r="3"/><circle cx="930" cy="570" r="3"/>
+  </g>
+  <!-- Cell boundary labels -->
+  <path d="M145 255 L95 210 L72 210" class="leader"/><text x="72" y="199" class="cell-label">Cell wall</text>
+  <path d="M158 270 L120 290 L72 290" class="leader"/><text x="72" y="309" class="cell-label">Plasma membrane</text>
+  <!-- Callouts -->
+  <path d="M350 480 L390 455 L430 455" class="leader"/><text x="438" y="459" class="cell-label">Nuclear envelope</text>
+  <path d="M460 285 L520 235 L570 235" class="leader"/><text x="578" y="239" class="cell-label">Mitochondrion</text>
+  <path d="M780 300 L840 260 L895 260" class="leader"/><text x="902" y="264" class="cell-label">Chloroplast</text>
+  <path d="M790 760 L860 810 L915 810" class="leader"/><text x="922" y="814" class="cell-label">Golgi apparatus</text>
+  <!-- animated focus rings -->
+  <rect x="100" y="213" width="910" height="660" rx="82" class="focus pulse f1"/>
+  <ellipse cx="270" cy="510" rx="110" ry="98" class="focus pulse f2"/>
+  <ellipse cx="590" cy="545" rx="285" ry="245" class="focus pulse f3"/>
+  <ellipse cx="760" cy="300" rx="82" ry="45" class="focus pulse f4"/>
+  <path d="M370 250 C425 218 520 235 525 290 C530 355 400 365 375 315Z" class="focus pulse f5"/>
+  <path d="M670 710 Q760 680 850 710 L860 795 Q760 820 690 795Z" class="focus pulse f6"/>
+  <path d="M145 350 Q250 320 350 360 L365 630 Q240 675 150 630Z" class="focus pulse f7"/>
+</g>
+<!-- Right explanatory panel -->
+<g transform="translate(1080 218)">
+ <rect width="444" height="650" rx="24" class="card"/>
+ <text x="30" y="42" class="eyebrow">FOLLOW THE STRUCTURES</text>
+ <text x="30" y="73" font-size="22" font-weight="650" class="white">A closer look, step by step</text>
+ <text x="30" y="98" class="small">The highlighted region changes as the tour progresses.</text>
+ <g transform="translate(0 126)">
+  <rect x="18" y="-20" width="4" height="66" rx="2" class="activebar b1"/>
+  <circle cx="48" cy="0" r="15" class="stepDot"/><text x="48" y="4" class="stepNum">01</text>
+  <text x="76" y="-3" class="stepTitle">Cell wall &amp; plasma membrane</text>
+  <text x="76" y="20" class="stepCopy">The wall supports the cell; the membrane</text><text x="76" y="37" class="stepCopy">controls what enters and leaves.</text>
+  <line x1="30" y1="58" x2="414" y2="58" class="stepLine"/>
+ </g>
+ <g transform="translate(0 208)">
+  <rect x="18" y="-20" width="4" height="66" rx="2" class="activebar b2"/>
+  <circle cx="48" cy="0" r="15" class="stepDot"/><text x="48" y="4" class="stepNum">02</text>
+  <text x="76" y="-3" class="stepTitle">Nucleus</text>
+  <text x="76" y="20" class="stepCopy">Stores most of the cell’s DNA and helps</text><text x="76" y="37" class="stepCopy">coordinate cellular activities.</text>
+  <line x1="30" y1="58" x2="414" y2="58" class="stepLine"/>
+ </g>
+ <g transform="translate(0 290)">
+  <rect x="18" y="-20" width="4" height="66" rx="2" class="activebar b3"/>
+  <circle cx="48" cy="0" r="15" class="stepDot"/><text x="48" y="4" class="stepNum">03</text>
+  <text x="76" y="-3" class="stepTitle">Central vacuole</text>
+  <text x="76" y="20" class="stepCopy">Stores water and dissolved substances;</text><text x="76" y="37" class="stepCopy">helps maintain turgor pressure.</text>
+  <line x1="30" y1="58" x2="414" y2="58" class="stepLine"/>
+ </g>
+ <g transform="translate(0 372)">
+  <rect x="18" y="-20" width="4" height="66" rx="2" class="activebar b4"/>
+  <circle cx="48" cy="0" r="15" class="stepDot"/><text x="48" y="4" class="stepNum">04</text>
+  <text x="76" y="-3" class="stepTitle">Chloroplasts</text>
+  <text x="76" y="20" class="stepCopy">Capture light energy for photosynthesis,</text><text x="76" y="37" class="stepCopy">producing sugars from carbon dioxide and water.</text>
+  <line x1="30" y1="58" x2="414" y2="58" class="stepLine"/>
+ </g>
+ <g transform="translate(0 454)">
+  <rect x="18" y="-20" width="4" height="66" rx="2" class="activebar b5"/>
+  <circle cx="48" cy="0" r="15" class="stepDot"/><text x="48" y="4" class="stepNum">05</text>
+  <text x="76" y="-3" class="stepTitle">Mitochondrion</text>
+  <text x="76" y="20" class="stepCopy">Carries out cellular respiration to make</text><text x="76" y="37" class="stepCopy">ATP, a usable energy source.</text>
+  <line x1="30" y1="58" x2="414" y2="58" class="stepLine"/>
+ </g>
+ <g transform="translate(0 536)">
+  <rect x="18" y="-20" width="4" height="66" rx="2" class="activebar b6"/>
+  <circle cx="48" cy="0" r="15" class="stepDot"/><text x="48" y="4" class="stepNum">06</text>
+  <text x="76" y="-3" class="stepTitle">Golgi apparatus</text>
+  <text x="76" y="20" class="stepCopy">Modifies, sorts and packages proteins</text><text x="76" y="37" class="stepCopy">and lipids for transport.</text>
+  <line x1="30" y1="58" x2="414" y2="58" class="stepLine"/>
+ </g>
+ <g transform="translate(0 618)">
+  <rect x="18" y="-20" width="4" height="28" rx="2" class="activebar b7"/>
+  <circle cx="48" cy="0" r="15" class="stepDot"/><text x="48" y="4" class="stepNum">07</text>
+  <text x="76" y="-3" class="stepTitle">Endoplasmic reticulum &amp; ribosomes</text>
+  <text x="76" y="20" class="stepCopy">Ribosomes build proteins; the ER helps</text><text x="76" y="37" class="stepCopy">process and move them through the cell.</text>
+ </g>
+</g>
+<!-- Footer -->
+<text x="78" y="936" class="eyebrow">PLANT CELL · STRUCTURE &amp; FUNCTION</text>
+<text x="1520" y="936" text-anchor="end" class="small">Illustrative diagram · Not to scale</text>
+</svg>
