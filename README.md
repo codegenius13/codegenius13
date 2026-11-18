@@ -27,13 +27,6 @@ A guided exploration of a plant cell, from its protective cell wall and plasma m
 
 <br>
 
-<p align="center">
-  <img src="assets/dna-double-helix.svg" width="85%" alt="Illustration of a double-stranded DNA double helix">
-</p>
-
-DNA stores the genetic information that directs cellular activities. Its double-helical structure consists of two complementary antiparallel strands held together by specific base pairing. The sequence of nucleotide bases provides the information required for gene expression, inheritance, and the production of functional RNA and proteins.
-
-<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/protein-synthesis-cell-animation.svg">
@@ -47,15 +40,15 @@ Protein synthesis translates genetic information carried by messenger RNA into a
 
 <p align="center">
   <a href="https://www.rcsb.org/3d-view/1RCX">
-    <img src="https://cdn.rcsb.org/images/structures/1rcx_assembly-1.jpeg" width="30%" alt="Spinach Rubisco structure, PDB 1RCX">
+    <img src="assets/rubisco.png" width="30%" alt="Spinach Rubisco structure, PDB 1RCX">
   </a>
   &nbsp;&nbsp;
   <a href="https://www.rcsb.org/3d-view/5XNL">
-    <img src="https://cdn.rcsb.org/images/structures/5xnl_assembly-1.jpeg" width="30%" alt="Plant photosystem II light-harvesting supercomplex, PDB 5XNL">
+    <img src="assets/Photosystem.png" width="30%" alt="Plant photosystem II light-harvesting supercomplex, PDB 5XNL">
   </a>
   &nbsp;&nbsp;
   <a href="https://www.rcsb.org/3d-view/8B2L">
-    <img src="https://cdn.rcsb.org/images/structures/8b2l_assembly-1.jpeg" width="30%" alt="Plant cytosolic 80S ribosome, PDB 8B2L">
+    <img src="assets/ribosome.png" width="30%" alt="Plant cytosolic 80S ribosome, PDB 8B2L">
   </a>
 </p>
 
